@@ -1,5 +1,5 @@
 // SoundLater – Offline-Cache für die App-Dateien (keine Nutzerdaten)
-const CACHE = 'soundlater-v9';
+const CACHE = 'soundlater-v10';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './favicon-32.png', './mp4box.all.min.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
